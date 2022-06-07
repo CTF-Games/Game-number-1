@@ -9,14 +9,12 @@ router.get(['/', '/index.html', '/index', '/ctf', '/flag', '/hint'], function(re
 
 router.post('/login', function(req, res) {
   
-    cookie = req.cookies.isAdmin;
-    username = req.query.username;
-    password = req.query.password;
-    
+     cookie = req.cookies.isAdmin;
+
     if(cookie == 1) {
-      res.render('secretPage', {username: username, password: password, hint: process.env.HINT, success: true});
+      res.render('secretPage', {hint: process.env['hint'], success: true});
     }else{
-      res.render('secretPage', {username: username, password: password, success: false});
+      res.render('secretPage', {success: false});
     }
 })
 

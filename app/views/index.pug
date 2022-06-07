@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Login with username &#38; password
+
+  form(action='/login', method='POST')
+    div(class='container')
+      | Username :
+      br
+      input(type='text', name='username', value='')   
+      br
+      | Password :
+      br
+      input(type='password', name='password', value='' )
+    input(type='submit', value='Submit') 

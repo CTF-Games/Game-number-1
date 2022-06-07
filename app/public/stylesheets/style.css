@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+p {
+  font-size: 17px;
+  font-style: bold;
+}
+
+input {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid crimson;
+}
+
+input[type="submit"] {
+  width:100px;
+  background-color:white;
+  border-radius: 10%;
+  margin-left: 40px;
+  margin-top: 10px;
+}
